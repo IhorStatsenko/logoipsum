@@ -15,3 +15,34 @@
   font-weight: 400;
   font-style: normal;
 } */
+:root {
+  --color-brand-main: #ff7143;
+  --color-brand-main-active: #9f3919;
+  --color-brand-second: #5454d4;
+  --color-brand-main-tsp: rgb(255 113 67 / 0.27);
+  --color-bg-light: #fff;
+  --color-bg-light-tsp: rgb(255 255 255 / 0);
+  --color-text-main: #696871;
+  --color-text-accent: #19191b;
+  --color-text-inverted: #fff;
+  --color-card-text-price: #1d293f;
+  --color-card-bg: #f8f8f8;
+  --color-card-btn-border: #eae9f2;
+  --color-input-placeholder: #000;
+  --color-shadow: rgba(1, 0.4, 0.2, 0.3);
+
+  --font-main: 'DM Sans', serif;
+  --font-second: 'Mulish', serif;
+}
+
+body {
+  font-family: var(--font-main);
+  font-optical-sizing: auto;
+  font-size: 20px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 30px;
+  color: var(--color-text-main);
+
+  background-color: var(--color-bg-light);
+}
