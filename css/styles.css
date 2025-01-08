@@ -1,13 +1,4 @@
 /* // <uniquifier>: Use a unique and descriptive class name
-// <weight>: Use a value from 100 to 1000
-
-.dm-sans-<uniquifier> {
-  font-family: "DM Sans", serif;
-  font-optical-sizing: auto;
-  font-weight: <weight>;
-  font-style: normal;
-} */
-/* // <uniquifier>: Use a unique and descriptive class name
 
 .mulish-<uniquifier> {
   font-family: "Mulish", serif;
@@ -35,14 +26,110 @@
   --font-second: 'Mulish', serif;
 }
 
+/* Some global overrides */
+
 body {
   font-family: var(--font-main);
   font-optical-sizing: auto;
-  font-size: 20px;
-  font-weight: 400;
+  font-size: 15px;
+  font-weight: 700;
   font-style: normal;
-  line-height: 30px;
+  letter-spacing: -0.47px;
+  line-height: auto;
   color: var(--color-text-main);
 
   background-color: var(--color-bg-light);
+}
+
+button {
+  width: 215px;
+  padding-block: 19px;
+  text-align: center;
+  border-radius: 10px;
+  border-style: hidden;
+  outline: none;
+
+  font-family: var(--font-main);
+  font-size: 17px;
+  letter-spacing: -0.53px;
+  line-height: auto;
+  cursor: pointer;
+
+  background-color: var(--color-brand-second);
+  color: var(--color-text-inverted);
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.list {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+  list-style: none;
+}
+.link {
+  letter-spacing: -0.47px;
+}
+.link a {
+  text-decoration: none;
+  color: var(--color-text-main);
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rectangle(0 0 0 0);
+  overflow: hidden;
+  outline: transparent;
+  outline-offset: 0;
+}
+
+.section {
+  padding-block: 120px;
+}
+
+.container {
+  max-width: 1076px;
+  margin: 0 auto;
+  padding-inline: 15px;
+}
+
+/* header/footer */
+
+.section-header,
+.section-footer {
+  padding-block: 44px;
+  background-color: var(--color-brand-main-tsp);
+}
+.header-container,
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav-list {
+  display: flex;
+  gap: 50px;
+}
+.nav-link a {
+  padding-block: 30px;
+}
+.nav-link:hover a {
+  color: var(--color-text-accent);
+}
+.header-container button {
+  background-color: #ff7143;
+}
+.header-container button:hover {
+  background-color: var(--color-brand-main-active);
 }
