@@ -27,7 +27,6 @@ p {
 
 body {
   font-family: var(--font-main);
-  font-optical-sizing: auto;
   font-size: 15px;
   font-weight: 700;
   font-style: normal;
